@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Step 2 - Orthographic Local Frame on Sphere</title>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+<link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <div id="info"></div>
+  <div id="contextMenu" role="menu" aria-label="Context Help Menu">
+    <div class="menu-title">Context Help</div>
+    <div class="menu-item" data-command="toggleRearWireframe" role="menuitem">
+      <span>Rear hemisphere wireframe</span>
+      <span class="state" data-state="toggleRearWireframe">shown</span>
+    </div>
+    <div class="menu-item" data-command="toggleLocalFrame" role="menuitem">
+      <span>Local coordinate frame</span>
+      <span class="state" data-state="toggleLocalFrame">shown</span>
+    </div>
+    <div class="menu-item" data-command="toggleGlobalCenter" role="menuitem">
+      <span>Global center (fix/move)</span>
+      <span class="state" data-state="toggleGlobalCenter">fixed</span>
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
